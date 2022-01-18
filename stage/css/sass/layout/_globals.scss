@@ -1,0 +1,17 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.page{
+    min-height: 100vh;
+    
+    .content-area{
+        width: calc(100% - 250px);
+        min-width: 100vh;
+        transition: 0.3s;
+        float: right;
+        will-change: width;
+    }
+
+}
