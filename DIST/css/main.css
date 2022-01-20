@@ -1,2 +1,2 @@
-*{box-sizing:border-box}.page{min-height:100vh}.page .content-area{width:calc(100% - 250px);min-width:100vh;transition:.3s;float:right;will-change:width}.page .sidebar{width:250px;position:fixed;top:0;left:0;height:100%;transition:.3s;padding:15px;background-color:#eee}
+*{box-sizing:border-box;margin:0;padding:0}.page{min-height:100vh}.page .content-area{width:calc(100% - 250px);min-width:100vh;transition:.3s;float:right;will-change:width}.page .content-area.no-sidebar{width:100%}.page .sidebar{width:250px;position:fixed;top:0;left:0;height:100%;transition:.3s;padding:15px;background-color:#eee}.page .sidebar.no-sidebar{left:-250px}.fa-exchange-alt{font-size:40px}.fa-exchange-alt:hover{cursor:pointer}
 /*# sourceMappingURL=main.css.map */

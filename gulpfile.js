@@ -49,8 +49,9 @@ gulp.task('js' , () => {
      
      return  watch('stage/js/*.js' , () => {
           gulp.src('stage/js/*.js')
+          
+          //.pipe(minify())
           .pipe(concat('all.js'))
-          .pipe(minify())
           .pipe(gulp.dest('DIST/js'))
           .pipe(livereload())
      })  

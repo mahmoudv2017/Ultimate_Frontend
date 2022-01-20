@@ -8,5 +8,12 @@
         transition: 0.3s;
         padding: 15px;
         background-color: #eee;
+
+        &.no-sidebar{
+            left: -250px;
+        }
+        
     }
 }
+
+
