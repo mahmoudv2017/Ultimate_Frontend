@@ -1,6 +1,14 @@
-.fa-exchange-alt{
-    font-size: 40px;
-    &:hover{
-        cursor: pointer;
+.header{
+    
+    background-color: #fff;
+    padding: 15px;
+
+    
+    .fa-exchange-alt{
+        font-size: 40px;
+        &:hover{
+            cursor: pointer;
+        }
     }
 }
+
