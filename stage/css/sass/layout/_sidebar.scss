@@ -12,6 +12,105 @@
         &.no-sidebar{
             left: -250px;
         }
+
+        .logo-area{
+            font-size: 26px;
+            font-weight: lighter;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            color: #fff;
+            letter-spacing: 2px;
+        }
+
+        .links-area{
+            //all links
+            li{
+                a{
+                    padding: 10px 20px;
+                    display: block;
+                    position: relative;
+                    transition: .3s;
+                    color: #ccc;
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: none;
+                        color: #fff;
+                    }
+
+                    .fa-angle-right{
+                        position: relative;
+                        float: right;
+                        top: 6px;
+                        transition: 0.3s;
+                    }
+        
+                    .down{
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+
+            //Main Links
+            >li >a{
+                
+                color: #fff;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0px;
+                    width: 10px;
+                    height: 10px;
+                    border: 2px solid #fff;
+                    border-radius: 50%;
+                    transform: translateY(-50%);
+                }
+
+                &:hover{
+                    padding-left: 26px;
+                }
+            }
+
+            //child links
+            .child-links{
+                position: relative;
+                display: none;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    border-radius: 15px;
+                    top: 0;
+                    left: 3px;
+                    width: 3px;
+                    height: 100%;
+                    background-color: #ccc;
+                }
+
+               a{
+                   
+                   &:hover:before{
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 3px;
+                        width: 3px;
+                        height: 100%;
+                        background-color: #fff;
+                   }
+
+                
+               }
+
+               
+               
+            }
+
+            
+
+            
+        }
+
         
     }
 }

@@ -1,1 +1,24 @@
-.sidebar sidebar
+.sidebar 
+    .logo-area.text-center Dashboard
+    
+    ul.links-area.list-unstyled
+        li: a(href="#") HomePage
+
+        li
+            a.toggle-submenu(href="#")
+                | forms 
+                i.fas.fa-angle-right
+            ul.child-links.list-unstyled 
+                li: a(href="#") Input
+                li: a(href="#") textbox
+                li: a(href="#") checker
+                li: a(href="#") Radio
+
+        li 
+            a.toggle-submenu(href="#") 
+                | Misc
+                i.fas.fa-angle-right 
+            ul.child-links.list-unstyled 
+                li: a(href="#") loading
+                li: a(href="#") something
+

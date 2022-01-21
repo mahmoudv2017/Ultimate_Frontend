@@ -13,7 +13,7 @@ var gulp = require('gulp'),
 gulp.task('html', function () {
   require('./server.js')
   livereload.listen()
-  return watch('stage/html/*.pug' , () => {
+  return watch('stage/html/**/*.pug' , () => {
 
 
     vinyl.src('stage/html/*.pug')
@@ -31,8 +31,8 @@ gulp.task('html', function () {
 // Css Task
 gulp.task('css', function () {
 
-  return watch(["stage/css/**/*.css", "stage/css/**/*.scss"] , () => {
-    gulp.src(["stage/css/**/*.css", "stage/css/**/*.scss"])
+  return watch(["stage/css/**/**/*.scss"] , () => {
+    gulp.src(["stage/css/**/**/*.scss"])
 
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
