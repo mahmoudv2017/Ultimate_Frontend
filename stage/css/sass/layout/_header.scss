@@ -1,11 +1,42 @@
 .header{
     
     background-color: #fff;
-    padding: 15px;
+    padding: 20px;
+
+    .notification-container{
+        margin-left: 15px;
+        display: inline-block;
+        padding: 10px;
+        
+
+
+        .notification-icon{
+            padding: 10px;
+            border-radius: 45%;
+            background-color: #939393;
+            cursor: pointer;
+        }
+
+        .dropdown-menu{
+            min-width: 30rem;
+            padding: 20px;
+            border: none;
+            
+            &:before{
+                content: "";
+                position: absolute;
+                top: 0px;
+                left: 6.5px;
+                border-width: 10px;
+                border-color: red transparent transparent transparent;
+                border-style: solid;
+            }
+        }
+    }
 
     
     .fa-exchange-alt{
-        font-size: 2em;
+        font-size: 1em;
         &:hover{
             cursor: pointer;
         }

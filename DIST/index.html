@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&amp;display=swap">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <title>Homepage</title>
   </head>
@@ -34,9 +35,20 @@
         </ul>
       </div>
       <div class="content-area"> 
-        <div class="header"><i class="fas fa-exchange-alt toggle-sidebar"></i></div>
-        <div class="content">
-          <div>content area</div>
+        <div class="header"><i class="fas fa-exchange-alt toggle-sidebar"></i>
+          <div class="notification-container"><i class="fas fa-bell notification-icon" id="notification-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+            <ul class="dropdown-menu" aria-labelledby="notification-toggle">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="content">
+            <div class="page-head">
+              <h1 class="page-title">Homepage</h1>
+              <div class="lead page-description">This is the description of the page</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
