@@ -5,4 +5,22 @@
         i.fas.fa-bell#notification-toggle.notification-icon(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
     
         ul.dropdown-menu(aria-labelledby='notification-toggle')
-            li: a.dropdown-item(href='#') Action
+            .noti-header
+                | Notifications
+                span 50
+            .noti-content 
+                ul.list-unstyled
+                    li 
+                        i.fas.fa-air-freshener
+                        | You Recieved an Air Freshner
+                    li 
+                        i.fas.fa-thumbs-up
+                        | You Recieved a Like 
+                    li 
+                        i.far.fa-money-bill-alt
+                        | You Recieved some Money
+                    li 
+                        i.fab.fa-fantasy-flight-games
+                        | You Recieved a Game
+            .noti-footer
+                a.text-center(href="#") view all notifications 

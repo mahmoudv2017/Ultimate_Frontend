@@ -19,17 +19,64 @@
 
         .dropdown-menu{
             min-width: 30rem;
-            padding: 20px;
+            top: 5px !important;
             border: none;
             
             &:before{
                 content: "";
                 position: absolute;
-                top: 0px;
+                top: -12px;
                 left: 6.5px;
                 border-width: 10px;
-                border-color: red transparent transparent transparent;
+                border-color: transparent transparent #212529 transparent;
                 border-style: solid;
+            }
+
+
+            .noti-header{
+                background-color: #212529;
+                color: #fff;
+                padding: 10px;
+   
+                >span{
+                    float: right;
+                }
+            }
+
+            .noti-content{
+                padding: 20px;
+                ul{
+                    li{
+                        padding: 10px;
+                        i{
+                            padding: 10px;
+                            background-color: #ccc;
+                            border-radius: 50%;
+                            margin-right: 10px;
+                            line-height: 20px;
+                            text-align: center;
+                            position: relative;
+                            width: 45px;
+                            height: 45px;
+                            top: -2px;
+                        }
+                    }
+                }
+                
+            }
+
+            .noti-footer{
+                a{
+                    display: block;
+                    text-decoration: none;
+                    padding: 10px;
+                    text-transform: capitalize;
+                    &:hover{
+                        text-decoration: none;
+                        border: .2px solid rgb(85, 85, 133);
+                    }
+                }
+                
             }
         }
     }
