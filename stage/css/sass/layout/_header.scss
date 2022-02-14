@@ -3,18 +3,25 @@
     background-color: #fff;
     padding: 20px;
 
+    .header-icon{
+        padding: 10px;
+        border-radius: 45%;
+        margin-left: 8px;
+        cursor: pointer;
+        
+    }
     .notification-container{
-        margin-left: 15px;
+        //margin-left: 15px;
         display: inline-block;
         padding: 10px;
         
 
 
         .notification-icon{
-            padding: 10px;
-            border-radius: 45%;
+           
             background-color: #939393;
-            cursor: pointer;
+          
+            
         }
 
         .dropdown-menu{
@@ -48,17 +55,53 @@
                 ul{
                     li{
                         padding: 10px;
+                        &:first-child{
+                            padding-top: 0;
+                     
+                        }
+
+                        &:last-child{
+                            padding-bottom: 0;
+                            margin-bottom: 0;
+                            border-bottom: 0;
+                        }
                         i{
                             padding: 10px;
-                            background-color: #ccc;
-                            border-radius: 50%;
+                            
+                            //border-radius: 50%;
+                            font-weight: bold;
+                            font-size: 15px;
+                            margin-bottom: 10px;
                             margin-right: 10px;
-                            line-height: 20px;
+                            line-height: 25px;
                             text-align: center;
                             position: relative;
                             width: 45px;
                             height: 45px;
                             top: -2px;
+
+                            
+                        }
+
+
+                        .fa-air-freshener{
+                            background-color: #939393;
+                            color: blueviolet;
+                        }
+
+                        .fa-thumbs-up{
+                            background-color: #c38e8e;
+                            color: #869ad3;
+                        }
+
+                        .fa-money-bill-alt{
+                            background-color: #4c8d40;
+                            color: #2f4881;
+                        }
+
+                        .fa-fantasy-flight-games{
+                            background-color: #dfca33;
+                            color: #8a2be2;
                         }
                     }
                 }
