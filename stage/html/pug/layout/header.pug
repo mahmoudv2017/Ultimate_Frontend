@@ -27,3 +27,11 @@
                 a.text-center(href="#") view all notifications 
 
     i.toggle-fullscreen.header-icon.fas.fa-expand-alt
+
+    .user-container
+        i.header-icon#usermenu.usermenu-class(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+            img.avatar.rounded-circle(src="./pug/static/avatar.jpg", alt="user's avatar")
+            span mahmoud hesham 
+
+        .dropdown-menu.dropdown-menu-right(aria-labelledby='usermenu')
+            | text content

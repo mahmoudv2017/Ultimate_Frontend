@@ -124,6 +124,38 @@
         }
     }
 
+    .user-container{
+
+        float: right;
+        padding: 10px;
+        cursor: pointer;
+
+        .dropdown-menu{
+            min-width: 2rem;
+            top: 5px !important;
+            border: none;
+            padding: 20px;
+            &:before{
+                content: "";
+                position: absolute;
+                top: -12px;
+                right: 20px;
+                border-width: 10px;
+                border-color: transparent transparent #212529 transparent;
+                border-style: solid;
+            }
+
+
+        }
+        .avatar{
+            width: 40px;
+            height: 40px;
+        }
+
+        span{
+            margin-left: 15px;
+        }
+    }
     
     .fa-exchange-alt{
         font-size: 1em;
