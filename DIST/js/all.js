@@ -29,6 +29,11 @@ $( () => {
     })
 
 
+    $('.toggle-settings').on('click' , function () {
+      $(this).parent().toggleClass('hide-settings')
+    })
+
+
 
 } )
 
