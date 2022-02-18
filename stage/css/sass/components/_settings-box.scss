@@ -15,11 +15,53 @@
         background-color: #d78c86;
         border-radius: 35px 0 0 35px;
         right: 280px;
+        // width: 30px;
+        // height: 30px;
+
         font-size: 20px;
-        padding: 10px 15px;
+
+        padding: 7px 5px;
+    }
+
+    .settings-content{
+        .options-title{
+            text-transform: capitalize;
+            color: gray;
+            padding: 10px;
+            margin: 10px 0 0px;
+            text-align: center;
+        }
+        .colors-settings{
+            ul{
+                $colors : (#e74c3c , #2ecc71 , #34495e , #e67e22 , #9b59b6);
+                @for $i from 1 through length($colors){
+                    li:nth-child(#{$i}){
+                        background-color:nth( $colors,  $i ) ;
+                    }
+                }
+                li{
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    display: inline-block;
+                    cursor: pointer;
+                    opacity: .7;
+
+                    &.active{
+                        opacity: 1;
+                    }
+                }
+                
+            }
+        }
+
+        
     }
 }
 
+// .rotator{
+//     transform: ;
+// }
 .hide-settings{
     right: -280px;
 }

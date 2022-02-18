@@ -128,18 +128,18 @@
 
         float: right;
         padding: 10px;
-        cursor: pointer;
-
+    
         .dropdown-menu{
             min-width: 600px;
             top: 5px !important;
+            
             border: none;
             padding: 20px;
             &:before{
                 content: "";
                 position: absolute;
                 top: -12px;
-                right: 20px;
+                right: 198px;
                 border-width: 10px;
                 border-color: transparent transparent #212529 transparent;
                 border-style: solid;
@@ -177,6 +177,7 @@
             .user-ControlPanel{
                 .user-links{
                     text-align: center;
+                    cursor: pointer;
                     .fa-cog{
                         color: #3e5079;
                     }

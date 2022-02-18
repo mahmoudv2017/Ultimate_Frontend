@@ -31,9 +31,20 @@ $( () => {
 
     $('.toggle-settings').on('click' , function () {
       $(this).parent().toggleClass('hide-settings')
+      $('.fa-cog').toggleClass('fa-spin')
     })
 
+    var themes = []
 
+     $('.color-settings , li').each( function() {
+        themes.push($(this).data('theme'))
+     }) 
+
+    $('.color-settings , li').on('click' , function() {
+
+      $(this).addClass('active').siblings().removeClass('active')
+      $('body').removeClass(themes).addClass($(this).data('theme'))
+    })
 
 } )
 
