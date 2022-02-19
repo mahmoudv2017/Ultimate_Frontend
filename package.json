@@ -1,7 +1,7 @@
 {
   "name": "ultimate_frontend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Ultimate frontend course by el zero web school on YT",
   "main": "gulpfile.js",
   "dependencies": {
     "uglify-js": "^3.14.5"
