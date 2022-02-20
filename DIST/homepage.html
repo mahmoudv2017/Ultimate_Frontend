@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Open+Sans:ital@1&family=Oswald:wght@200&family=Roboto+Serif:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <title>Homepage</title>
+  </head>
+  <body>
+    <div class="page home-page">
+      <div class="settings-box hide-settings">
+        <div class="toggle-settings"><i class="fas fa-cog fa-lg"></i></div>
+        <div class="settings-content">
+          <div class="colors-settings options-title">
+            <h3>colors settings</h3>
+            <ul class="list-unstyled">
+              <li data-theme="red-theme"></li>
+              <li data-theme="green-theme"></li>
+              <li data-theme="blue-theme"></li>
+              <li data-theme="orange-theme"></li>
+              <li data-theme="purple-theme"></li>
+              <li data-theme="dark-theme"></li>
+            </ul>
+          </div>
+          <div class="font-settings options-title"> 
+            <h3>font settings</h3>
+            <select class="font-selector">
+              <option value="roboto">roboto Font</option>
+              <option value="open">open Font</option>
+              <option value="oswald">oswald Font</option>
+              <option value="Noto">Noto Font</option>
+            </select>
+          </div>
+          <div class="header-settings options-title">
+            <h3>sidebar settings</h3>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar"> 
+        <div class="logo-area text-center">Dashboard</div>
+        <ul class="links-area list-unstyled">
+          <li><a class="active" href="homepage.html">HomePage</a></li>
+          <li><a class="toggle-submenu" href="#">forms <i class="fas fa-angle-right"></i></a>
+            <ul class="child-links list-unstyled"> 
+              <li><a href="#">Input</a></li>
+              <li><a href="#">textbox</a></li>
+              <li><a href="#">checker</a></li>
+              <li><a href="#">Radio</a></li>
+            </ul>
+          </li>
+          <li> <a class="toggle-submenu" href="#">
+               Misc<i class="fas fa-angle-right"> </i></a>
+            <ul class="child-links list-unstyled"> 
+              <li><a href="#">loading</a></li>
+              <li><a href="#">something</a></li>
+            </ul>
+          </li>
+          <li><a href="charts.html">Charts</a></li>
+        </ul>
+      </div>
+      <div class="content-area"> 
+        <div class="header"><i class="fas fa-exchange-alt toggle-sidebar header-icon"></i>
+          <div class="notification-container"><i class="header-icon fas fa-bell notification-icon" id="notification-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+            <ul class="dropdown-menu" aria-labelledby="notification-toggle">
+              <div class="noti-header">Notifications<span>50</span></div>
+              <div class="noti-content"> 
+                <ul class="list-unstyled">
+                  <li> <i class="fas fa-air-freshener"></i>You Recieved an Air Freshner</li>
+                  <li> <i class="fas fa-thumbs-up"></i>You Recieved a Like </li>
+                  <li> <i class="far fa-money-bill-alt"></i>You Recieved some Money</li>
+                  <li> <i class="fab fa-fantasy-flight-games"></i>You Recieved a Game</li>
+                </ul>
+              </div>
+              <div class="noti-footer"><a class="text-center" href="#">view all notifications </a></div>
+            </ul>
+          </div><i class="toggle-fullscreen header-icon fas fa-expand-alt"></i>
+          <div class="user-container"><i class="header-icon usermenu-class" id="usermenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img class="avatar rounded-circle" src="./pug/static/avatar.jpg" alt="user's avatar"><span>Mahmoud Hesham </span><i class="fas fa-angle-down"></i></i>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="usermenu">
+              <div class="user-info">
+                <h3>Mahmoud Hesham </h3>
+                <p>Premium User </p>
+              </div>
+              <hr>
+              <ul class="activites-list list-unstyled">
+                <li>User Has Posted A Comment on "Lorem, ipsum dolor."</li>
+                <li>User Has Created A new post</li>
+                <li>No Chnages user shoud get a hioppie</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, esse.</li>
+              </ul>
+              <hr>
+              <div class="user-ControlPanel">
+                <div class="row"> 
+                  <div class="col"> 
+                    <div class="user-links"> <i class="fas fa-cog"> </i><span>Settings</span></div>
+                  </div>
+                  <div class="col"> 
+                    <div class="user-links"> <i class="fas fa-user"> </i><span>Profile</span></div>
+                  </div>
+                  <div class="col"> 
+                    <div class="user-links"> <i class="fas fa-power-off"> </i><span>Logout</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="content">
+            <div class="page-head">
+              <h1 class="page-title">Homepage</h1>
+              <div class="lead page-description">This is the description of Homepage</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/jquery-3.6.0.min.js"> </script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.js"> </script>
+</html>

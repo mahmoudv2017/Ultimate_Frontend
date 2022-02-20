@@ -12,7 +12,7 @@
     .toggle-settings{
         position: absolute;
         top: 180px;
-        background-color: #d78c86;
+        background-color: transparent;
         border-radius: 35px 0 0 35px;
         right: 280px;
         // width: 30px;
@@ -33,7 +33,7 @@
         }
         .colors-settings{
             ul{
-                $colors : (#e74c3c , #2ecc71 , #34495e , #e67e22 , #9b59b6);
+                $colors : (#e74c3c , #2ecc71 , #0984e3 , #e67e22 , #9b59b6 , #636e72 );
                 @for $i from 1 through length($colors){
                     li:nth-child(#{$i}){
                         background-color:nth( $colors,  $i ) ;
@@ -51,6 +51,14 @@
                         opacity: 1;
                     }
                 }
+                
+            }
+        }
+
+        .font-settings{
+            select{
+                
+                text-transform: capitalize;
                 
             }
         }

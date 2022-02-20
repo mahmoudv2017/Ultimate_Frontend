@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&amp;display=swap">
+    <link rel="stylesheet" href="css/bootstrap.min.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Open+Sans:ital@1&family=Oswald:wght@200&family=Roboto+Serif:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-    <title>Homepage</title>
+    <title>Charts</title>
   </head>
   <body> 
     <div class="page home-page">
@@ -24,10 +24,17 @@
               <li data-theme="blue-theme"></li>
               <li data-theme="orange-theme"></li>
               <li data-theme="purple-theme"></li>
+              <li data-theme="dark-theme"></li>
             </ul>
           </div>
-          <div class="sidebar-settings options-title"> 
+          <div class="font-settings options-title"> 
             <h3>font settings</h3>
+            <select class="font-selector">
+              <option value="roboto">roboto Font</option>
+              <option value="open">open Font</option>
+              <option value="oswald">oswald Font</option>
+              <option value="Noto">Noto Font</option>
+            </select>
           </div>
           <div class="header-settings options-title">
             <h3>sidebar settings</h3>
@@ -37,7 +44,7 @@
       <div class="sidebar"> 
         <div class="logo-area text-center">Dashboard</div>
         <ul class="links-area list-unstyled">
-          <li><a href="#">HomePage</a></li>
+          <li><a href="homepage.html">HomePage</a></li>
           <li><a class="toggle-submenu" href="#">forms <i class="fas fa-angle-right"></i></a>
             <ul class="child-links list-unstyled"> 
               <li><a href="#">Input</a></li>
@@ -53,6 +60,7 @@
               <li><a href="#">something</a></li>
             </ul>
           </li>
+          <li><a class="active" href="charts.html">Charts</a></li>
         </ul>
       </div>
       <div class="content-area"> 
@@ -104,8 +112,8 @@
         <div class="container-fluid">
           <div class="content">
             <div class="page-head">
-              <h1 class="page-title">Homepage</h1>
-              <div class="lead page-description">This is the description of the page</div>
+              <h1 class="page-title">Charts</h1>
+              <div class="lead page-description">This is the description of Charts</div>
             </div>
           </div>
         </div>

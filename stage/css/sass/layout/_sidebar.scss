@@ -55,6 +55,11 @@
             >li >a{
                 
                 color: #fff;
+                &.active{
+                    &:before{
+                        border-color: $default-color ;
+                    }
+                }
                 &:before{
                     content: "";
                     position: absolute;
@@ -62,7 +67,7 @@
                     left: 0px;
                     width: 10px;
                     height: 10px;
-                    border: 2px solid #fff;
+                    border: 2px solid #ccc;
                     border-radius: 50%;
                     transform: translateY(-50%);
                 }
@@ -70,6 +75,8 @@
                 &:hover{
                     padding-left: 26px;
                 }
+
+                
             }
 
             //child links
@@ -84,7 +91,7 @@
                     left: 3px;
                     width: 3px;
                     height: 100%;
-                    background-color: #ccc;
+                    background-color: #8b8a8a;
                 }
 
                a{
@@ -96,7 +103,8 @@
                         left: 3px;
                         width: 3px;
                         height: 100%;
-                        background-color: #fff;
+                        background-color: $default-color;
+                        
                    }
 
                 

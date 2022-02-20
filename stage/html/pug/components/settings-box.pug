@@ -8,12 +8,17 @@
         .colors-settings.options-title
             h3 colors settings
 
-            - var themes = ['red-theme' , 'green-theme' , 'blue-theme' , 'orange-theme' , 'purple-theme']
+            - var themes = ['red-theme' , 'green-theme' , 'blue-theme' , 'orange-theme' , 'purple-theme' , 'dark-theme']
             ul.list-unstyled
                 each theme in themes
                     li(data-theme=theme)
-        .sidebar-settings.options-title 
+        .font-settings.options-title 
             h3 font settings
+
+            - var fonts = ['roboto' , 'open' , 'oswald' , 'Noto']
+            select.font-selector
+                each font in fonts 
+                    option(value=font)=font + ' Font'
         .header-settings.options-title
             h3 sidebar settings
     

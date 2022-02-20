@@ -2,7 +2,7 @@
     .logo-area.text-center Dashboard
     
     ul.links-area.list-unstyled
-        li: a(href="#") HomePage
+        li: a(href="homepage.html" class= pagetitle === 'Homepage' ? 'active' : '') HomePage
 
         li
             a.toggle-submenu(href="#")
@@ -22,3 +22,4 @@
                 li: a(href="#") loading
                 li: a(href="#") something
 
+        li: a(href="charts.html" class= pagetitle === 'Charts' ? 'active' : '') Charts

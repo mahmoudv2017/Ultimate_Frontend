@@ -17,12 +17,7 @@
         
 
 
-        .notification-icon{
-           
-            background-color: #939393;
-          
-            
-        }
+    
 
         .dropdown-menu{
             min-width: 30rem;
@@ -150,6 +145,7 @@
                     font-weight: bold;
                     text-transform: capitalize;
                     padding: 5px 0;
+                    color: $default-color;
                 }
             }
 
@@ -157,7 +153,6 @@
                 li{
                     padding: 10px;
                     line-height: 20px;
-                   
                     &:before{
                         content: "";
                         position: absolute;
@@ -214,6 +209,7 @@
         font-size: 1em;
         &:hover{
             cursor: pointer;
+            color: $default-color;
         }
     }
 }

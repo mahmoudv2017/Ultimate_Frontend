@@ -11,12 +11,7 @@ $( () => {
         $(this).next('.child-links').slideToggle()
     })
 
-    $(".notification-icon").on('mousedown' , function(){
-        $(this).css('background-color' , 'red')
-    })
-    $(".notification-icon").on('mouseup' , function(){
-        $(this).css('background-color' , '#939393')
-    })
+   
 
     $(".toggle-fullscreen").on("click" , function () {
         $(this).toggleClass('full-screen')
@@ -40,11 +35,25 @@ $( () => {
         themes.push($(this).data('theme'))
      }) 
 
-    $('.color-settings , li').on('click' , function() {
+     $('.color-settings , li').on('click' , function() {
 
       $(this).addClass('active').siblings().removeClass('active')
       $('body').removeClass(themes).addClass($(this).data('theme'))
     })
+
+     var fonts = []
+
+     $('.font-settings option').each( function() {
+      fonts.push($(this).val())
+     }) 
+
+     console.log({fonts : fonts})
+     $('.font-settings , option').on('change' , function () {
+      // console.log($(this).find('option:selected').val())
+        $('body').removeClass(fonts).addClass($(this).find('option:selected').val())
+     })
+
+    
 
 } )
 

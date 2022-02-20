@@ -1,16 +1,35 @@
 $themes : (
     red-theme : (color :  #e74c3c),
     green-theme : (color : #2ecc71),
-    blue-theme : (color : #34495e),
+    blue-theme : (color : #0984e3),
     orange-theme : (color : #e67e22),
-    purple-theme : (color : #9b59b6)
+    purple-theme : (color : #9b59b6),
+    dark-theme : (color : #636e72)
 );
 
 
 @each $key , $map in $themes {
     .#{$key}{
-        .page .page-head .page-title{
-            color: map-get($map , color);
+        $color : map-get($map , color);
+     
+
+        .page .sidebar .links-area .child-links a:hover:before{
+            background-color: $color;
         }
+
+        .page .page-head .page-title,
+        .header .user-container .dropdown-menu .user-info h3 ,
+        .header .fa-exchange-alt:hover{
+            color: $color;
+        }
+
+        
+        .page .sidebar .links-area>li>a.active:before{
+            border-color: $color;
+        }
+
+       
+
+        
     }
 }

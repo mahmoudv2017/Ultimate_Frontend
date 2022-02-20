@@ -20,7 +20,7 @@ gulp.task('html', function () {
         .pipe(pug({
           pretty: true
         }))
-        .pipe(concat('index.html'))
+        
         .pipe(gulp.dest('dist'))
 
         .pipe(livereload())
